@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment 3 - Vanilla JS</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Heron's Formula</h1>
+            <form id="heron-form">
+                <label for="heron-a">Side a:</label>
+                <input type="number" id="heron-a" required />
+                <label for="heron-b">Side b:</label>
+                <input type="number" id="heron-b" required />
+                <label for="heron-c">Side c:</label>
+                <input type="number" id="heron-c" required />
+                <label for="heron-result">Area:</label>
+                <input type="text" id="heron-result" readonly />
+                <input type="submit" value="Calculate" />
+            </form>
+
+            <h1>Ambiguous Case</h1>
+            <form id="ambiguous-form">
+                <label for="ambiguous-angle">Angle A:</label>
+                <input type="number" id="ambiguous-angle" required />
+                <label for="ambiguous-a">Side a:</label>
+                <input type="number" id="ambiguous-a" required />
+                <label for="ambiguous-b">Side b:</label>
+                <input type="number" id="ambiguous-b" required />
+                <label for="ambiguous-result">Triangle Type:</label>
+                <input type="text" id="ambiguous-result" readonly />
+                <input type="submit" value="Calculate" />
+            </form>
+
+            <h1>Newton's Method</h1>
+            <form id="newton-form">
+                <label for="newton-guess">Root Guess:</label>
+                <input type="number" id="newton-guess" required />
+                <label for="newton-result">Approximation:</label>
+                <input type="text" id="newton-result" readonly />
+                <input type="submit" value="Calculate" />
+            </form>
+
+            <h1>Polynomial Function</h1>
+            <form id="poly-form">
+                <label for="poly-coeffs">Coefficients:</label>
+                <input
+                    type="text"
+                    id="poly-coeffs"
+                    placeholder="e.g., 2 3.1 -4 5"
+                    required
+                />
+                <label for="poly-exps">Exponents:</label>
+                <input
+                    type="text"
+                    id="poly-exps"
+                    placeholder="e.g., 5 3 2 1"
+                    required
+                />
+                <label for="poly-x">x Value:</label>
+                <input type="number" id="poly-x" required />
+                <label for="poly-result">Evaluation:</label>
+                <input type="text" id="poly-result" readonly />
+                <input type="submit" value="Calculate" />
+            </form>
+        </div>
+    </body>
+</html>

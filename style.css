@@ -1,0 +1,120 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    background-color: #f5f5f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: start;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="number"],
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #d1d1d6;
+    border-radius: 8px;
+    background-color: #f5f5f7;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007aff;
+    background-color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0051a8;
+}
+
+/* Placeholder Styling */
+input::placeholder {
+    color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 15px;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+}
